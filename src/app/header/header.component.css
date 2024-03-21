@@ -1,0 +1,40 @@
+.nav {
+  border: solid 10px #fdd90b;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-right: 200px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #151217;
+  font-size: larger;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-logo {
+  margin-left: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
