@@ -1,11 +1,11 @@
 .nav {
-  border: solid 10px #fdd90b;
+  box-shadow: 0 3px 0 #da001e;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -26,6 +26,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #fdd90b;
 }
 
 .nav-logo {
