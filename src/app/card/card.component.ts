@@ -10,5 +10,5 @@ export class CardComponent {
   @Input() src = '/assets/img/Logo.png';
   @Input() title = 'Titre par défault';
   @Input() description = 'Ceci est la description du produit';
-  @Input() prix = 'X€';
+  @Input() prix = '10€';
 }

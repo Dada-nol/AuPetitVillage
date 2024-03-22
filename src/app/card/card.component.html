@@ -1,15 +1,23 @@
-<!-- Pour chaque carte donner une variable image, titre, description, prix et un bouton "voir le produit" -->
-<!-- Mettre les carte dans un système de block pour qu'il y ait 3 cartes par ligne et 3 colonnes -->
-<!-- Donner du style aux carte pour qu'elle ressemble à des cartes -->
 <!-- Insérer un bouton dépliable pour permettre le tri coissant/décroissant (idk : en utilisant les pipes ainsi que) la fonction sort -->
 <!-- Insérer un outil de recherche par nom en utilisant un pipe -->
 <!-- Utiliser un service pour la page produit -->
 <!-- Dans la page produit il y a également img, titre, description, prix -->
-<!-- Tu t'appelles Darren !-->
 
-<div>
-  <img src="{{ src }}" alt="{{ alt }}" />
-  <h3>{{ title }}</h3>
-  <p>{{ description }}</p>
-  <p>{{ prix }}</p>
+<div class="card">
+  <div class="card-image">
+    <img src="{{ src }}" alt="{{ alt }}" />
+  </div>
+
+  <div class="card-body">
+    <div class="card-title">
+      <h3>{{ title }}</h3>
+    </div>
+    <div class="card-content">
+      <p>{{ description }}</p>
+      <p>{{ prix }}</p>
+    </div>
+    <div class="card-btn">
+      <button>Voir l'article</button>
+    </div>
+  </div>
 </div>
