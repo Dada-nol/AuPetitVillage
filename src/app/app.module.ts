@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CardComponent } from './card/card.component';
+import { SortByPricePipe } from './sort-by-price.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CardComponent } from './card/card.component';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    CardComponent
+    CardComponent,
+    SortByPricePipe
   ],
   imports: [
     BrowserModule,
