@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +15,8 @@ import { ContactComponent } from './contact/contact.component';
 import { CardComponent } from './card/card.component';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { ListComponent } from './list/list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductsService } from './services/products.service';
 
 @NgModule({
   declarations: [
@@ -24,15 +29,10 @@ import { ListComponent } from './list/list.component';
     ContactComponent,
     CardComponent,
     SortByPricePipe,
-    ListComponent
+    ListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideClientHydration()
-  ],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [provideClientHydration(), ProductsService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
