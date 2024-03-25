@@ -1,8 +1,6 @@
 .card {
   width: 400px;
   margin: auto;
-  background-color: white;
-  box-shadow: 0px 5px 20px #999;
 }
 .card a {
   color: #333;
@@ -34,7 +32,6 @@
 
 .card-body {
   text-align: center;
-  padding: 15px 20px;
   box-sizing: border-box;
 }
 
@@ -46,7 +43,7 @@ p {
   font-style: italic;
 }
 
-button {
+/* button {
   background-color: #f9d0a3;
   width: 100px;
   height: 30px;
@@ -56,4 +53,4 @@ button {
 button:hover {
   background-color: #fdd90b;
   transform: scale(0.96);
-}
+} */

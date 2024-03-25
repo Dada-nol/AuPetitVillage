@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CardComponent } from './card/card.component';
 import { SortByPricePipe } from './sort-by-price.pipe';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SortByPricePipe } from './sort-by-price.pipe';
     FooterComponent,
     ContactComponent,
     CardComponent,
-    SortByPricePipe
+    SortByPricePipe,
+    ListComponent
   ],
   imports: [
     BrowserModule,

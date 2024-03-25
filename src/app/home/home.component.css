@@ -1,14 +1,14 @@
-.content {
+/* .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 50px 0 50px 0;
-}
+} */
 
-.galerie {
+/* .galerie {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
   margin-top: 25px;
-}
+} */
