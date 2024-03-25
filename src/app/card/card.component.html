@@ -2,24 +2,30 @@
 <!-- Insérer un outil de recherche par nom en utilisant un pipe -->
 <!-- Utiliser un service pour la page produit -->
 <!-- Dans la page produit il y a également img, titre, description, prix -->
-
+<div class="sort">
+  <p>Trier :</p>
+  <select>
+    <option value="par ordre croissant">par ordre croissant</option>
+    <option value="par ordre décroissant">par ordre décroissant</option>
+  </select>
+</div>
 <div class="card">
-  <div *ngFor="let card of cards">
+  <!-- <div>
     <div class="card-image">
-      <img src="{{ src }}" alt="{{ alt }}" />
+      <img src="{{ product.src }}" alt="{{ product.alt }}" />
     </div>
 
     <div class="card-body">
       <div class="card-title">
-        <h3>{{ card.title }}</h3>
+        <h3>{{ product.title }}</h3>
       </div>
       <div class="card-content">
-        <p>{{ description }}</p>
-        <p>{{ card.price }}</p>
+        <p>{{ product.description }}</p>
+        <p>{{ product.price }}</p>
       </div>
       <div class="card-btn">
         <button>Voir l'article</button>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
