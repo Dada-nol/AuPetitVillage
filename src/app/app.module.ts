@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './Components/card/card.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { ListComponent } from './Components/list/list.component';
+import { AboutComponent } from './Pages/about/about.component';
+import { ContactComponent } from './Pages/contact/contact.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { ProductComponent } from './Pages/product/product.component';
+import { SortByPricePipe } from './Pipes/sort-by-price.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ProductComponent } from './product/product.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { ContactComponent } from './contact/contact.component';
-import { CardComponent } from './card/card.component';
-import { SortByPricePipe } from './sort-by-price.pipe';
-import { ListComponent } from './list/list.component';
+import { ProductsService } from './services/products.service';
 
 @NgModule({
   declarations: [
@@ -24,15 +29,10 @@ import { ListComponent } from './list/list.component';
     ContactComponent,
     CardComponent,
     SortByPricePipe,
-    ListComponent
+    ListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideClientHydration()
-  ],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [provideClientHydration(), ProductsService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

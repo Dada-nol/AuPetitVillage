@@ -12,7 +12,9 @@
       <p>{{ product.price }}</p>
     </div>
     <div class="card-btn">
-      <button class="btn btn-secondary">Voir l'article</button>
+      <button routerLink="/product/{{ product.Id }}" class="btn btn-secondary">
+        Voir l'article
+      </button>
     </div>
   </div>
 </div>
