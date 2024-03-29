@@ -2,7 +2,21 @@
   <app-header></app-header>
 </header>
 
-<p>product works!</p>
+<div class="row shadow">
+  <div class="col-sm-4">
+    <div class="card-img-wrapper">
+      <img
+        class="card-img-top"
+        src="/assets/img/Logo.png"
+        alt="Ceci est la description de l'image"
+      />
+    </div>
+    <div class="card-body">
+      <p>{{ product.name }}</p>
+    </div>
+  </div>
+  <div class="col-sm-8"></div>
+</div>
 
 <footer class="footer">
   <app-footer></app-footer>
