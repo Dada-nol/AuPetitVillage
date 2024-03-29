@@ -4,7 +4,11 @@ import {
   provideClientHydration,
 } from '@angular/platform-browser';
 
-import { HttpClientModule } from '@angular/common/http';
+import {
+  HttpClientModule,
+  provideHttpClient,
+  withFetch,
+} from '@angular/common/http';
 import { CardComponent } from './Components/card/card.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HeaderComponent } from './Components/header/header.component';
@@ -32,7 +36,11 @@ import { ProductsService } from './services/products.service';
     ListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [provideClientHydration(), ProductsService],
+  providers: [
+    provideClientHydration(),
+    ProductsService,
+    provideHttpClient(withFetch()),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
