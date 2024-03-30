@@ -32,12 +32,28 @@
   box-sizing: border-box;
 }
 
+.card-title {
+  color: #fdd90b;
+}
+
+p {
+  columns: #151217;
+}
+
+.d-flex {
+  justify-content: center;
+}
+
+.price {
+  color: #da001e;
+}
+
 button {
-  background-color: #f9d0a3;
+  background-color: #fdd90b;
   border-radius: 20px;
 }
 
 button:hover {
-  background-color: #fdd90b;
+  background-color: #f9d0a3;
   transform: scale(0.96);
 }

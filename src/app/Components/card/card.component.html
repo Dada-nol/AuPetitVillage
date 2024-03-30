@@ -13,7 +13,10 @@
     </div>
     <div class="card-content">
       <p class="fst-italic">{{ product.content }}</p>
-      <p class="fw-bold">{{ product.price }}</p>
+      <div class="d-flex">
+        <p class="px-1">Price :</p>
+        <p class="price fw-bold">{{ product.price }}</p>
+      </div>
     </div>
     <div class="card-btn">
       <button routerLink="/product/{{ product.Id }}" class="btn btn-secondary">

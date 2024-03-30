@@ -50,7 +50,7 @@
   {
     "Id": 7,
     "name": "Assurancetourix",
-    "price": "90€",
+    "price": "117€",
     "content": "Assurancetourix, le barde malchanceux du village gaulois, dont la présence colorée et joyeuse ajoute une touche d'humour et de légèreté à l'aventure des héros.",
     "src": "/assets/img/Assurancetourix.jpeg",
     "alt": "Représentation graphique du personnage de Assurancetourix, dans la série Astérix et Obélix"
@@ -58,7 +58,7 @@
   {
     "Id": 8,
     "name": "Bonemine",
-    "price": "95€",
+    "price": "113€",
     "content": "Bonemine, la mère autoritaire et aimante d'Obélix, dont la présence maternelle chaleureuse et protectrice contribue à l'équilibre familial du village gaulois.",
     "src": "/assets/img/Bonemine.jpeg",
     "alt": "Représentation graphique du personnage de Bonemine, dans la série Astérix et Obélix"
