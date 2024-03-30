@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@font-face {
+  font-family: "Bubbleboddy neue";
+  src: url(./assets/Font/BubbleboddyNeue-Bold-Trial.woff);
+  src: url(./assets/Font/BubbleboddyNeue-Bold\ Trial.ttf) format("truetype");
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bubbleboddy neue", serif;
+}
+
+p,
+a {
+  font-family: "Comfortaa", serif;
+}
