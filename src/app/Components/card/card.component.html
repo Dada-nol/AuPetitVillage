@@ -1,6 +1,10 @@
 <div class="card">
   <div class="card-image">
-    <img class="card-img-top" src="{{ product.src }}" alt="{{ product.alt }}" />
+    <img
+      class="card-img-top img-fluide"
+      src="{{ product.src }}"
+      alt="{{ product.alt }}"
+    />
   </div>
 
   <div class="card-body p-2">
@@ -8,8 +12,11 @@
       <h3>{{ product.name }}</h3>
     </div>
     <div class="card-content">
-      <p>{{ product.content }}</p>
-      <p>{{ product.price }}</p>
+      <p class="fst-italic">{{ product.content }}</p>
+      <div class="d-flex">
+        <p class="px-1">Price :</p>
+        <p class="price fw-bold">{{ product.price }}</p>
+      </div>
     </div>
     <div class="card-btn">
       <button routerLink="/product/{{ product.Id }}" class="btn btn-secondary">

@@ -1,5 +1,39 @@
+<div class="input-group mb-5">
+  <input
+    [(ngModel)]="name"
+    type="text"
+    class="form-control"
+    placeholder="Filtrer par nom"
+    aria-label="Recipient's username with two button addons"
+  />
+  <button
+    (click)="filterName()"
+    class="btn btn-outline-secondary"
+    type="button"
+  >
+    Search
+  </button>
+  <button (click)="clearName()" class="btn btn-outline-secondary" type="button">
+    Clear
+  </button>
+</div>
+
+<label>Trier par prix : </label>
+
+<button class="m-3 btn tri" (click)="onSortDirection()">
+  <p *ngIf="sortDirection === 'asc'">Décroissant</p>
+  <p *ngIf="sortDirection === 'desc'">Croissant</p>
+</button>
+
 <div class="row">
-  <div *ngFor="let product of products" class="shadow-lg col-sm-4 p-3">
+  <div
+    *ngFor="
+      let product of products
+        | filter : searchName : 'name'
+        | sortByPrice : [sortDirection]
+    "
+    class="shadow-lg col col-lg-4 p-3"
+  >
     <app-card [product]="product"></app-card>
   </div>
 </div>

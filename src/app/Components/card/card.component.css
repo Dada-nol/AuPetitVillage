@@ -1,11 +1,8 @@
 .card {
-  width: 400px;
+  width: 250px;
   margin: auto;
 }
-.card a {
-  color: #333;
-  text-decoration: none;
-}
+
 .card:hover .card-image img {
   width: 120%;
   filter: grayscale(0);
@@ -36,21 +33,27 @@
 }
 
 .card-title {
-  text-transform: uppercase;
+  color: #fdd90b;
 }
 
 p {
-  font-style: italic;
+  columns: #151217;
 }
 
-/* button {
-  background-color: #f9d0a3;
-  width: 100px;
-  height: 30px;
+.d-flex {
+  justify-content: center;
+}
+
+.price {
+  color: #da001e;
+}
+
+button {
+  background-color: #fdd90b;
   border-radius: 20px;
 }
 
 button:hover {
-  background-color: #fdd90b;
+  background-color: #f9d0a3;
   transform: scale(0.96);
-} */
+}
