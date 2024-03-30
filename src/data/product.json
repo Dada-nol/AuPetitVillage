@@ -1,74 +1,74 @@
 [
   {
     "Id": 1,
-    "name": "Nom de la carte 1",
-    "price": "1000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "Astérix",
+    "price": "125€",
+    "content": "Figurine de l'un des personnages principaux de la série Astérix et Obélix, Astérix en personne !",
+    "src": "/assets/img/Astérix.png",
+    "alt": "Représentation graphique du personnage de Astérix, dans la série Astérix et Obélix"
   },
   {
     "Id": 2,
-    "name": "Nom de la carte 2",
-    "price": "2000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "Obélix",
+    "price": "125€",
+    "content": "Obélix, le plus grand et le plus gourmand des Gaulois, avec un appétit pour les menhirs aussi grand que son cœur !",
+    "src": "/assets/img/Obélix.png",
+    "alt": "Représentation graphique du personnage de Obélix, dans la série Astérix et Obélix"
   },
   {
     "Id": 3,
-    "name": "Nom de la carte 3",
-    "price": "3000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "Panoramix",
+    "price": "105€",
+    "content": "Panoramix, le druide sage et puissant, gardien des secrets de la potion magique, dont la sagesse éclaire les chemins de la résistance gauloise.",
+    "src": "/assets/img/Panoramix.jpeg",
+    "alt": "Représentation graphique du personnage de Panoramix, dans la série Astérix et Obélix"
   },
   {
     "Id": 4,
-    "name": "Nom de la carte",
-    "price": "4000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "Abraracourcix",
+    "price": "105€",
+    "content": "Abraracourcix, le fier et intrépide chef du village d'Astérix et Obélix, dont le courage et la loyauté ne connaissent pas de limites dans la défense de la Gaule contre l'envahisseur romain.",
+    "src": "/assets/img/Abraracourcix.jpeg",
+    "alt": "Représentation graphique du personnage de Abraracourcix, dans la série Astérix et Obélix"
   },
   {
     "Id": 5,
-    "name": "Nom de la carte",
-    "price": "5000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "Falbala",
+    "price": "115€",
+    "content": "Falbala, la belle et énergique amie d'Astérix, dont la vivacité et le charme illuminent le village gaulois, ajoutant une touche de grâce à l'aventure tumultueuse des irréductibles Gaulois.",
+    "src": "/assets/img/Falbala.jpeg",
+    "alt": "Représentation graphique du personnage de Falbala, dans la série Astérix et Obélix"
   },
   {
     "Id": 6,
-    "name": "Nom de la carte",
-    "price": "6000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "César",
+    "price": "120€",
+    "content": "César, le redoutable empereur romain, dont l'ambition démesurée et la stratégie machiavélique sont constamment mises à l'épreuve par les irréductibles Gaulois.",
+    "src": "/assets/img/César.jpeg",
+    "alt": "Représentation graphique du personnage de César, dans la série Astérix et Obélix"
   },
   {
     "Id": 7,
-    "name": "Nom de la carte",
-    "price": "7000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "Assurancetourix",
+    "price": "90€",
+    "content": "Assurancetourix, le barde malchanceux du village gaulois, dont la présence colorée et joyeuse ajoute une touche d'humour et de légèreté à l'aventure des héros.",
+    "src": "/assets/img/Assurancetourix.jpeg",
+    "alt": "Représentation graphique du personnage de Assurancetourix, dans la série Astérix et Obélix"
   },
   {
     "Id": 8,
-    "name": "Nom de la carte",
-    "price": "8000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "Bonemine",
+    "price": "95€",
+    "content": "Bonemine, la mère autoritaire et aimante d'Obélix, dont la présence maternelle chaleureuse et protectrice contribue à l'équilibre familial du village gaulois.",
+    "src": "/assets/img/Bonemine.jpeg",
+    "alt": "Représentation graphique du personnage de Bonemine, dans la série Astérix et Obélix"
   },
   {
     "Id": 9,
-    "name": "Nom de la carte",
-    "price": "9000€",
-    "content": "Ceci est la description de la card",
-    "src": "/assets/img/Logo.png",
-    "alt": "Ceci est la description de l'image"
+    "name": "Idéfix",
+    "price": "500€",
+    "content": "Idéfix, le fidèle compagnon canin d'Astérix et Obélix. ",
+    "src": "/assets/img/Idéfix.png",
+    "alt": "Représentation graphique du personnage de Idéfix, dans la série Astérix et Obélix"
   }
 ]
