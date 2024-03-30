@@ -1,12 +1,5 @@
-.nav {
+.navbar {
   box-shadow: 0 3px 0 #da001e;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .nav-link {
@@ -29,7 +22,7 @@ a:hover {
   color: #fdd90b;
 }
 
-.nav-logo {
+.navbar-brand {
   margin-left: 10px;
   width: 150px;
   height: 150px;
