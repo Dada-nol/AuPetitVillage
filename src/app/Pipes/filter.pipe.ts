@@ -4,17 +4,14 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'filter',
 })
 export class FilterPipe implements PipeTransform {
-  transform(product: any, filterString: string, propName: string): any[] {
-    const resultArray = [];
-    if (product.length === 0 || filterString === '' || propName === '') {
-      return product;
+  transform(products: any[], filterString: string, propName: string): any[] {
+    if (products.length === 0 || filterString === '' || propName === '') {
+      return products;
     }
 
-    for (const name of product) {
-      if (name[propName] === filterString) {
-        resultArray.push(name);
-      }
-    }
+    const resultArray = products.filter((product) =>
+      product[propName].toLowerCase().includes(filterString.toLowerCase())
+    );
     return resultArray;
   }
 }
