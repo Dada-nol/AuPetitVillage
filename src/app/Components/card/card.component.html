@@ -1,27 +1,17 @@
-<div class="card">
-  <div class="card-image">
+<div class="character-card" routerLink="/product/{{ product.Id }}">
+  <div class="card-image-wrapper">
     <img
-      class="card-img-top img-fluide"
+      class="card-image"
       src="{{ product.src }}"
       alt="{{ product.alt }}"
+      loading="lazy"
     />
+    <div class="card-overlay">
+      <span class="view-details">Voir la fiche</span>
+    </div>
   </div>
-
-  <div class="card-body p-2">
-    <div class="card-title">
-      <h3>{{ product.name }}</h3>
-    </div>
-    <div class="card-content">
-      <p class="fst-italic">{{ product.content }}</p>
-      <div class="d-flex">
-        <p class="px-1">Price :</p>
-        <p class="price fw-bold">{{ product.price }}</p>
-      </div>
-    </div>
-    <div class="card-btn">
-      <button routerLink="/product/{{ product.Id }}" class="btn btn-secondary">
-        Voir l'article
-      </button>
-    </div>
+  <div class="card-content">
+    <h3 class="character-name">{{ product.name }}</h3>
+    <p class="character-description">{{ product.content }}</p>
   </div>
 </div>

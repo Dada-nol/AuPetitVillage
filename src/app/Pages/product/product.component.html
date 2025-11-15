@@ -1,56 +1,64 @@
 <header class="header">
   <app-header></app-header>
 </header>
-
 <main>
   <div class="container mt-5 mb-5">
-    <div class="row shadow">
-      <div class="col-md-4">
-        <div class="image">
-          <img
-            class="img-fluid"
-            src="{{ product.src }}"
-            alt="{{ product.alt }}"
-          />
+    <div class="character-detail-card shadow-lg">
+      <div class="row g-0">
+        <!-- Image Section -->
+        <div class="col-md-5">
+          <div class="character-image-section">
+            <img
+              class="character-main-image"
+              src="{{ product.src }}"
+              alt="{{ product.alt }}"
+            />
+          </div>
         </div>
-      </div>
 
-      <div class="title col-md-6 border">
-        <div class="mb-5 title text-center">
-          <h2 class="fw-bolder">{{ product.name }}</h2>
-        </div>
-        <div class="price">
-          <p class="fw-bold fs-4">Prix : {{ product.price }}</p>
-          <p>
-            Les prix des articles vendus sur Amazon incluent la TVA. En fonction
-            de votre adresse de livraison, la TVA peut varier au moment du
-            paiement.
-          </p>
-        </div>
-        <div class="desciption mt-3">
-          <p>À propos de cet article</p>
-          <p class="fst-italic">{{ product.content }}</p>
-          <p>Livraison : Ce produit est livré sous 4 jours ouvrés</p>
-          <p>Note du produit : 4/5</p>
-        </div>
-      </div>
+        <!-- Info Section -->
+        <div class="col-md-7">
+          <div class="character-info-section">
+            <div class="character-header">
+              <h1 class="character-title">{{ product.name }}</h1>
+              <span class="character-badge"
+                >Personnage d'Astérix et Obélix</span
+              >
+            </div>
 
-      <div class="col-md-2 text-center border pb-3">
-        <p class="fw-bold p-3 fs-4">{{ product.price }}</p>
-        <p class="fw-medium">
-          Produit Au Petit Village <br />
-          - <br />
-          Livré par Django
-        </p>
-        <div class="mt-5 d-flex flex-column">
-          <button class="mt-3 btn">Panier</button>
-          <button class="mt-3 btn">Acheter</button>
+            <div class="character-description-box">
+              <h3 class="section-title">À propos</h3>
+              <p class="character-full-description">{{ product.content }}</p>
+            </div>
+
+            <div class="character-metadata">
+              <div class="metadata-item">
+                <i class="bi bi-book-fill"></i>
+                <div>
+                  <strong>Univers</strong>
+                  <p>Astérix et Obélix</p>
+                </div>
+              </div>
+              <div class="metadata-item">
+                <i class="bi bi-star-fill"></i>
+                <div>
+                  <strong>Popularité</strong>
+                  <p>Personnage emblématique</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="action-section">
+              <button routerLink="/" class="btn-back">
+                <i class="bi bi-arrow-left"></i> Retour à la collection
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </main>
-
 <footer class="footer">
   <app-footer></app-footer>
 </footer>

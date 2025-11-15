@@ -9,8 +9,6 @@ import { ProductsService } from '../../services/products.service';
 export class ListComponent implements OnInit {
   name = '';
   searchName = '';
-  sortByPrice = '';
-  sortDirection = 'asc';
   products: any = [];
 
   filterName() {
@@ -20,14 +18,6 @@ export class ListComponent implements OnInit {
   clearName() {
     this.searchName = '';
     this.name = '';
-  }
-
-  onSortDirection() {
-    if (this.sortDirection === 'desc') {
-      this.sortDirection = 'asc';
-    } else {
-      this.sortDirection = 'desc';
-    }
   }
 
   constructor(private productsService: ProductsService) {}
